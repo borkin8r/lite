@@ -1,7 +1,11 @@
 #ifndef RENDERER_H
 #define RENDERER_H
 
-#include <SDL2/SDL.h>
+#ifdef _WIN32
+  #include <SDL.h>
+#else
+  #include <SDL2/SDL.h>
+#endif
 #include <stdint.h>
 
 typedef struct RenImage RenImage;
