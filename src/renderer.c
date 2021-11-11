@@ -7,6 +7,10 @@
 
 #define MAX_GLYPHSET 256
 
+#ifndef EXIT_FAILURE
+  #define EXIT_FAILURE 1
+#endif
+
 struct RenImage {
   RenColor *pixels;
   int width, height;
